@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+
+}
+
+body {
+  background: #FAEBD7;
+}
+
+/* Estilo do Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 500px;
+  background-color: #8a745871;
+  backdrop-filter: blur(50px);
+  z-index: 1000;
+
+  .txt-topo {
+    display: flex;
+    justify-content: center;
+    color: #1a2715;
+
+    & h1 {
+      font-size: 30px;
+      font-weight: 500;
+      width: 300px;
+    }
+
+    & span {
+      font-weight: 350;
+    }
+  }
+
+}
+
+.menu-desktop {
+  display: flex;
+  justify-content: right;
+  margin-top: 12px;
+
+
+  & ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & li {
+    font-size: 20px;
+    color: #1a2715;
+    font-weight: 400;
+    list-style: none;
+    padding: 50px;
+    cursor: pointer;
+  }
+
+  .txt-quem-somos {
+    width: 250px;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & a:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+  }
+
+}
+
+.imoveis-topo {
+  margin-top: 100px;
+
+  .img-topo {
+
+    img {
+      width: 100%;
+      height: 720px;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 100px;
+      background-color: #20202088;
+      width: 100%;
+      height: 720px;
+    }
+
+    h2 {
+      font-size: 62px;
+      font-weight: 300;
+      width: 1500px;
+      color: #fff;
+      line-height: 1.2em;
+      letter-spacing: -0.02em;
+      position: absolute;
+      margin-left: 100px;
+      margin-top: -450px;
+    }
+  }
+
+
+}
+
+.txt-produtos-destaque h2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  font-size: 36px;
+  font-weight: 400;
+  padding-top: 130px;
+  color: #1a2715;
+
+}
+
+.produtos-em-destaque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 85px;
+  margin: 65px 10px;
+
+
+  .conteudo-especialista {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+
+    & h3 {
+      padding-top: 40px;
+    }
+
+    & p {
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+
+  .conteudo-prestigio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    width: 354px;
+
+
+    & h3 {
+      padding-top: 40px;
+    }
+
+    & p {
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+
+  .conteudo-elegantes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+
+    & h3 {
+      padding-top: 40px;
+    }
+
+    & p {
+      font-size: 16px;
+      padding: 20px;
+    }
+  }
+
+  & img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+}
+
+.botao-ver-tudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+
+  & button {
+    width: 200px;
+    height: 65px;
+    border-radius: 36px;
+    color: #fff;
+    background: #000;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  button:hover {
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.1s opacity linear;
+  }
+
+}
+
+.txt-serviços h2 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  font-size: 42px;
+  font-weight: 400;
+  padding-top: 150px;
+  color: #1a2715;
+}
+
+section.nossos-servicos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 85px;
+  padding: 70px;
+
+  & img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .conteudo-conecte-expertos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+
+    & h3 {
+      padding-top: 40px;
+      font-size: 19px;
+      text-align: left;
+    }
+
+    & h4 {
+      font-size: 16px;
+      font-weight: 300;
+      padding: 10px;
+      height: 100px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .border {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      height: 145px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & p {
+        font-size: 14px;
+        padding: 15px;
+        width: 355px;
+      }
+    }
+
+  }
+
+  .conteudo-imoveis-prestigio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+
+    & h3 {
+      padding-top: 40px;
+      font-size: 19px;
+      text-align: left;
+    }
+
+    & h4 {
+      font-size: 16px;
+      font-weight: 300;
+      padding: 10px;
+      height: 100px;
+      width: 300px;
+      text-align: center;
+    }
+
+    .border {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      height: 145px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & p {
+        font-size: 14px;
+        padding: 15px;
+        width: 355px;
+      }
+    }
+  }
+
+  .vozes-de-confiança {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 354px;
+
+    & h3 {
+      padding-top: 40px;
+      font-size: 19px;
+      text-align: left;
+    }
+
+    & h4 {
+      font-size: 16px;
+      font-weight: 300;
+      padding: 10px;
+      height: 100px;
+      width: 300px;
+      text-align: center;
+    }
+
+    
+
+    .border {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-radius: 15px;
+      height: 145px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & p {
+        font-size: 14px;
+        padding: 15px;
+        width: 355px;
+      }
+    }
+  }
+}
+
+.agendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding-top: 120px;
+}
+
+.container-info-agendar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: -440px;
+  
+  & h2 {
+    font-size: 52px;
+    font-weight: 400;
+    color: #1a2715;
+  }
+
+  & p {
+    width: 600px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+.container-bloco-agendamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-login {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -45px;
+  margin-right: 20px;
+  z-index: 1;
+
+  & p {
+    font-size: 14px;
+    margin-top: 20px;
+
+    & span {
+      font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.info-title { /* titulo dos container 1, 2 e 3*/
+  display: flex;
+  align-items: center;
+  width: 500px;
+
+  & p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #000;
+    width: 23px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+  }
+
+  & h2 {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+}
+
+.container-escolha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  width: 550px;
+  height: 480px;
+  background-color: #ffffff3f;
+  border-radius: 5px;
+  align-items: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+
+
+  .consulta {
+    border: 1px solid #3333333a;
+    border-radius: 15px;
+    width: 520px;
+    padding: 30px;
+    
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+  }
+
+  .basico {
+    border: 1px solid #3333333a;
+    border-radius: 15px;
+    width: 520px;
+    padding: 30px;
+    
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;   
+  }
+
+  .avancado {
+    border: 1px solid #3333333a;
+    border-radius: 15px;
+    width: 520px;
+    padding: 30px;
+    
+
+    display: flex;
+    justify-content: space-between;   
+    align-items: center; 
+  }
+
+  & p {
+    font-size: 16px;
+  }
+
+  & h3 {
+    font-size: 14px;
+    
+  }
+
+  button {
+    width: 150px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+  }
+
+  button:hover {
+    color: #fff;
+    opacity: 0.7;
+    transition: 0.1s opacity linear;
+
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #ffffff3f;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.confirmacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #ffffff3f;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container-txt-planos h2{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  font-size: 42px;
+  font-weight: 400;
+  padding-top: 150px;
+  margin-bottom: -30px;
+  color: #1a2715;
+}
+
+
+.container-bloco-escolha-seu-plano {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 85px;
+  padding: 50px 10px;
+
+  & img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  .conteudo-assinatura-royal-basic, .conteudo-assinatura-royal-plus, .conteudo-assinatura-royal-supreme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & h2 {
+      font-size: 19px;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    & h3 {
+      font-size: 16px;
+      font-weight: 300;
+      padding: 5px;
+      text-align: center;
+    }
+  
+    & h4 {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    & p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 350px;
+      height: 165px;
+      text-align: center;
+      margin-top: 10px;
+      border: 1px solid #3333333a;
+      border-radius: 15px;
+      padding: 15px;
+    }
+  
+    & button {
+      margin: 40px auto;
+      width: 220px;
+      height: 60px;
+      border-radius: 26px;
+      color: #fff;
+      background: #000;
+      font-size: 12px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      
+      &:hover {
+        color: #fff;
+        opacity: 0.7;
+        transition: 0.1s opacity linear;
+      }
+
+    }
+
+  }
+
+  
+}
+
+.container-bloco-sobre-nos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 210px 60px;
+  gap: 60px;
+
+  & img {
+    border-radius: 25px;
+    width: 785px;
+  }
+
+  .conteudo-sobre-nos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    & h2 {
+      font-size: 42px;
+      font-weight: 400;
+      color: #1a2715;
+    }
+  
+    .traco-sobre-nos {
+      height: 1px;
+      width: 360px;
+      background-color: #000000;
+    }
+
+    & p {
+      width: 350px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+
+.top-footer-border {
+  margin-left: 220px;
+  height: 1px;
+  width: 1200px;
+  background-color: #00000021;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 250px;
+
+  .footer-info {
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+
+    & h4 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+  
+    & p {
+      font-size: 16px;
+      padding-top: 20px;
+      width: 250px;
+      color: #8d773c;
+      font-weight: 550;
+    }
+  }
+
+  & img {
+    width: 25px;
+    padding-top: 17px;
+    cursor: pointer;
+  }
+
+  img:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+  }
+
+
+  .footer-links {
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+
+    & h4 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    & a {
+      padding-top: 10px;
+      text-decoration: none;
+      color: #8d773c;  
+      font-weight: 550;
+    }
+
+    a:hover {
+      transform: scale(1.05);
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  .footer-institucional {
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+
+    & h4 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    & p {
+      font-size: 16px;
+      padding-top: 20px;
+      color: #8d773c;
+      font-weight: 500;
+    }
+
+    p:hover {
+      transform: scale(1.05);
+      transition: 0.2s ease-in-out;
+    }
+
+    & a {
+      padding-top: 10px;
+      text-decoration: none;
+      color: #8d773c;
+      font-weight: 550;
+    }
+
+    a:hover {
+      transform: scale(1.05);
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
